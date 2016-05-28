@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChocolatesByNumbers</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>Two positive integers N and M are given. Integer N represents the number of chocolates arranged in a circle,
+        numbered from 0 to N − 1.</p>
+    <p>You start to eat the chocolates. After eating a chocolate you leave only a wrapper.</p>
+    <p>You begin with eating chocolate number 0. Then you omit the next M − 1 chocolates or wrappers on the circle, and
+        eat the following one.</p>
+    <p>More precisely, if you ate chocolate number X, then you will next eat the chocolate with number (X + M) modulo N
+        (remainder of division).</p>
+    <p>You stop eating when you encounter an empty wrapper.</p>
+    <p>For example, given integers N = 10 and M = 4. You will eat the following chocolates: 0, 4, 8, 2, 6.</p>
+    <p>The goal is to count the number of chocolates that you will eat, following the above rules.</p>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int solution(int N, int M); }</tt></p></blockquote>
+    <p>that, given two positive integers N and M, returns the number of chocolates that you will eat.</p>
+    <p>For example, given integers N = 10 and M = 4. the function should return 5, as explained above.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>N and M are integers within the range [<span class="number">1</span>..<span
+                    class="number">1,000,000,000</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(log(N+M));</li>
+            <li>expected worst-case space complexity is O(log(N+M)).</li>
+        </ul>
+    </blockquote>
+</div>
+</body>
+</html>
