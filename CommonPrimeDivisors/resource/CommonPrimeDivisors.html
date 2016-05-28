@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CommonPrimeDivisors</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>A <i>prime</i> is a positive integer X that has exactly two distinct divisors: 1 and X. The first few prime
+        integers are 2, 3, 5, 7, 11 and 13.</p>
+    <p>A prime D is called a <i>prime divisor</i> of a positive integer P if there exists a positive integer K such that
+        D * K = P. For example, 2 and 5 are prime divisors of 20.</p>
+    <p>You are given two positive integers N and M. The goal is to check whether the sets of prime divisors of integers
+        N and M are exactly the same.</p>
+    <p>For example, given:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>N = 15 and M = 75, the prime divisors are the same: {3, 5};</li>
+            <li>N = 10 and M = 30, the prime divisors aren't the same: {2, 5} is not equal to {2, 3, 5};</li>
+            <li>N = 9 and M = 5, the prime divisors aren't the same: {3} is not equal to {5}.</li>
+        </ul>
+    </blockquote>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int solution(int[] A, int[] B); }</tt></p></blockquote>
+    <p>that, given two non-empty zero-indexed arrays A and B of Z integers, returns the number of positions K for which
+        the prime divisors of A[K] and B[K] are exactly the same.</p>
+    <p>For example, given:</p>
+    <tt style="white-space:pre-wrap"> A[0] = 15 B[0] = 75
+        A[1] = 10 B[1] = 30
+        A[2] = 3 B[2] = 5</tt>
+    <p>the function should return 1, because only one pair (15, 75) has the same set of prime divisors.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>Z is an integer within the range [<span class="number">1</span>..<span class="number">6,000</span>];
+            </li>
+            <li>each element of arrays A, B is an integer within the range [<span class="number">1</span>..<span
+                    class="number">2,147,483,647</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(Z*log(max(A)+max(B))<sup>2</sup>);</li>
+            <li>expected worst-case space complexity is O(1), beyond input storage (not counting the storage required
+                for input arguments).
+            </li>
+        </ul>
+    </blockquote>
+    <p>Elements of input arrays can be modified.</p>
+</div>
+</body>
+</html>
