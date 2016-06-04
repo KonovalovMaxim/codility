@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FibFrog</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>The Fibonacci sequence is defined using the following recursive formula:</p>
+        <tt style="white-space:pre-wrap"> F(0) = 0
+            F(1) = 1
+            F(M) = F(M - 1) + F(M - 2) if M &gt;= 2</tt>
+        <p>A small frog wants to get to the other side of a river. The frog is initially located at one bank of the
+            river (position −1) and wants to get to the other bank (position N). The frog can jump over any distance
+            F(K), where F(K) is the K-th Fibonacci number. Luckily, there are many leaves on the river, and the frog can
+            jump between the leaves, but only in the direction of the bank at position N.</p>
+        <p>The leaves on the river are represented in a zero-indexed array A consisting of N integers. Consecutive
+            elements of array A represent consecutive positions from 0 to N − 1 on the river. Array A contains only 0s
+            and/or 1s:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>0 represents a position without a leaf;</li>
+                <li>1 represents a position containing a leaf.</li>
+            </ul>
+        </blockquote>
+        <p>The goal is to count the minimum number of jumps in which the frog can get to the other side of the river
+            (from position −1 to position N). The frog can jump between positions −1 and N (the banks of the river) and
+            every position containing a leaf.</p>
+        <p>For example, consider array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 0
+            A[1] = 0
+            A[2] = 0
+            A[3] = 1
+            A[4] = 1
+            A[5] = 0
+            A[6] = 1
+            A[7] = 0
+            A[8] = 0
+            A[9] = 0
+            A[10] = 0</tt>
+        <p>The frog can make three jumps of length F(5) = 5, F(3) = 2 and F(5) = 5.</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int[] A); }</tt></p></blockquote>
+        <p>that, given a zero-indexed array A consisting of N integers, returns the minimum number of jumps by which the
+            frog can get to the other side of the river. If the frog cannot reach the other side of the river, the
+            function should return −1.</p>
+        <p>For example, given:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 0
+            A[1] = 0
+            A[2] = 0
+            A[3] = 1
+            A[4] = 1
+            A[5] = 0
+            A[6] = 1
+            A[7] = 0
+            A[8] = 0
+            A[9] = 0
+            A[10] = 0</tt>
+        <p>the function should return 3, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N is an integer within the range [<span class="number">0</span>..<span class="number">100,000</span>];
+                </li>
+                <li>each element of array A is an integer that can have one of the following values: 0, 1.</li>
+            </ul>
+        </blockquote>
+        <p>Complexity:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>expected worst-case time complexity is O(N*log(N));</li>
+                <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage
+                    required for input arguments).
+                </li>
+            </ul>
+        </blockquote>
+        <p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+
+</body>
+</html>
