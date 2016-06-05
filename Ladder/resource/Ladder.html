@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ladder</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>You have to climb up a ladder. The ladder has exactly N rungs, numbered from 1 to N. With each step, you can
+        ascend by one or two rungs. More precisely:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>with your first step you can stand on rung 1 or 2,</li>
+            <li>if you are on rung K, you can move to rungs K + 1 or K + 2,</li>
+            <li>finally you have to stand on rung N.</li>
+        </ul>
+    </blockquote>
+    <p>Your task is to count the number of different ways of climbing to the top of the ladder.</p>
+    <p>For example, given N = 4, you have five different ways of climbing, ascending by:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>1, 1, 1 and 1 rung,</li>
+            <li>1, 1 and 2 rungs,</li>
+            <li>1, 2 and 1 rung,</li>
+            <li>2, 1 and 1 rungs, and</li>
+            <li>2 and 2 rungs.</li>
+        </ul>
+    </blockquote>
+    <p>Given N = 5, you have eight different ways of climbing, ascending by:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>1, 1, 1, 1 and 1 rung,</li>
+            <li>1, 1, 1 and 2 rungs,</li>
+            <li>1, 1, 2 and 1 rung,</li>
+            <li>1, 2, 1 and 1 rung,</li>
+            <li>1, 2 and 2 rungs,</li>
+            <li>2, 1, 1 and 1 rungs,</li>
+            <li>2, 1 and 2 rungs, and</li>
+            <li>2, 2 and 1 rung.</li>
+        </ul>
+    </blockquote>
+    <p>The number of different ways can be very large, so it is sufficient to return the result modulo 2<sup>P</sup>,
+        for a given integer P.</p>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int[] solution(int[] A, int[] B); }</tt></p></blockquote>
+    <p>that, given two non-empty zero-indexed arrays A and B of L integers, returns an array consisting of L integers
+        specifying the consecutive answers; position I should contain the number of different ways of climbing the
+        ladder with A[I] rungs modulo 2<sup>B[I]</sup>.</p>
+    <p>For example, given L = 5 and:</p>
+    <tt style="white-space:pre-wrap"> A[0] = 4 B[0] = 3
+        A[1] = 4 B[1] = 2
+        A[2] = 5 B[2] = 4
+        A[3] = 5 B[3] = 3
+        A[4] = 1 B[4] = 1</tt>
+    <p>the function should return the sequence [5, 1, 8, 0, 1], as explained above.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>L is an integer within the range [<span class="number">1</span>..<span class="number">30,000</span>];
+            </li>
+            <li>each element of array A is an integer within the range [<span class="number">1</span>..<span
+                    class="number">L</span>];
+            </li>
+            <li>each element of array B is an integer within the range [<span class="number">1</span>..<span
+                    class="number">30</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(L);</li>
+            <li>expected worst-case space complexity is O(L), beyond input storage (not counting the storage required
+                for input arguments).
+            </li>
+        </ul>
+    </blockquote>
+    <p>Elements of input arrays can be modified.</p>
+</div>
+</body>
+</html>
