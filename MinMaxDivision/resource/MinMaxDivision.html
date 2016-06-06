@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MinMaxDivision</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>You are given integers K, M and a non-empty zero-indexed array A consisting of N integers. Every element of
+            the array is not greater than M.</p>
+        <p>You should divide this array into K blocks of consecutive elements. The size of the block is any integer
+            between 0 and N. Every element of the array should belong to some block.</p>
+        <p>The sum of the block from X to Y equals A[X] + A[X + 1] + ... + A[Y]. The sum of empty block equals 0.</p>
+        <p>The <i>large sum</i> is the maximal sum of any block.</p>
+        <p>For example, you are given integers K = 3, M = 5 and array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 2
+            A[1] = 1
+            A[2] = 5
+            A[3] = 1
+            A[4] = 2
+            A[5] = 2
+            A[6] = 2</tt>
+        <p>The array can be divided, for example, into the following blocks:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>[2, 1, 5, 1, 2, 2, 2], [], [] with a large sum of 15;</li>
+                <li>[2], [1, 5, 1, 2], [2, 2] with a large sum of 9;</li>
+                <li>[2, 1, 5], [], [1, 2, 2, 2] with a large sum of 8;</li>
+                <li>[2, 1], [5, 1], [2, 2, 2] with a large sum of 6.</li>
+            </ul>
+        </blockquote>
+        <p>The goal is to minimize the large sum. In the above example, 6 is the minimal large sum.</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int K, int M, int[] A); }</tt></p></blockquote>
+        <p>that, given integers K, M and a non-empty zero-indexed array A consisting of N integers, returns the minimal
+            large sum.</p>
+        <p>For example, given K = 3, M = 5 and array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 2
+            A[1] = 1
+            A[2] = 5
+            A[3] = 1
+            A[4] = 2
+            A[5] = 2
+            A[6] = 2</tt>
+        <p>the function should return 6, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N and K are integers within the range [<span class="number">1</span>..<span
+                        class="number">100,000</span>];
+                </li>
+                <li>M is an integer within the range [<span class="number">0</span>..<span class="number">10,000</span>];
+                </li>
+                <li>each element of array A is an integer within the range [<span class="number">0</span>..<span
+                        class="number">M</span>].
+                </li>
+            </ul>
+        </blockquote>
+        <p>Complexity:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>expected worst-case time complexity is O(N*log(N+M));</li>
+                <li>expected worst-case space complexity is O(1), beyond input storage (not counting the storage
+                    required for input arguments).
+                </li>
+            </ul>
+        </blockquote>
+        <p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+</body>
+</html>
