@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CountTriangles</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>A zero-indexed array A consisting of N integers is given. A triplet (P, Q, R) is <i>triangular</i> if it is
+            possible to build a triangle with sides of lengths A[P], A[Q] and A[R]. In other words, triplet (P, Q, R) is
+            triangular if 0 ≤ P &lt; Q &lt; R &lt; N and:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>A[P] + A[Q] &gt; A[R],</li>
+                <li>A[Q] + A[R] &gt; A[P],</li>
+                <li>A[R] + A[P] &gt; A[Q].</li>
+            </ul>
+        </blockquote>
+        <p>For example, consider array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 10 A[1] = 2 A[2] = 5
+            A[3] = 1 A[4] = 8 A[5] = 12</tt>
+        <p>There are four triangular triplets that can be constructed from elements of this array, namely (0, 2, 4), (0,
+            2, 5), (0, 4, 5), and (2, 4, 5).</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int[] A); }</tt></p></blockquote>
+        <p>that, given a zero-indexed array A consisting of N integers, returns the number of triangular triplets in
+            this array.</p>
+        <p>For example, given array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 10 A[1] = 2 A[2] = 5
+            A[3] = 1 A[4] = 8 A[5] = 12</tt>
+        <p>the function should return 4, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N is an integer within the range [<span class="number">0</span>..<span class="number">1,000</span>];
+                </li>
+                <li>each element of array A is an integer within the range [<span class="number">1</span>..<span
+                        class="number">1,000,000,000</span>].
+                </li>
+            </ul>
+        </blockquote>
+        <p>Complexity:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>expected worst-case time complexity is O(N<sup>2</sup>);</li>
+                <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage
+                    required for input arguments).
+                </li>
+            </ul>
+        </blockquote>
+        <p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+</body>
+</html>
