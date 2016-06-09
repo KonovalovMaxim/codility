@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CountDistinctSlices</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>An integer M and a non-empty zero-indexed array A consisting of N non-negative integers are given. All integers in array A are less than or equal to M.</p>
+        <p>A pair of integers (P, Q), such that 0 ≤ P ≤ Q &lt; N, is called a <i>slice</i> of array A. The slice consists of the elements A[P], A[P + 1], ..., A[Q]. A <i>distinct slice</i> is a slice consisting of only unique numbers. That is, no individual number occurs more than once in the slice.</p>
+        <p>For example, consider integer M = 6 and array A such that:</p>
+        <tt style="white-space:pre-wrap">    A[0] = 3
+            A[1] = 4
+            A[2] = 5
+            A[3] = 5
+            A[4] = 2</tt>
+        <p>There are exactly nine distinct slices: (0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2), (3, 3), (3, 4) and (4, 4).</p>
+        <p>The goal is to calculate the number of distinct slices.</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java" style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class Solution { public int solution(int M, int[] A); }</tt></p></blockquote>
+        <p>that, given an integer M and a non-empty zero-indexed array A consisting of N integers, returns the number of distinct slices.</p>
+        <p>If the number of distinct slices is greater than 1,000,000,000, the function should return 1,000,000,000.</p>
+        <p>For example, given integer M = 6 and array A such that:</p>
+        <tt style="white-space:pre-wrap">    A[0] = 3
+            A[1] = 4
+            A[2] = 5
+            A[3] = 5
+            A[4] = 2</tt>
+        <p>the function should return 9, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote><ul style="margin: 10px;padding: 0px;"><li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];</li>
+            <li>M is an integer within the range [<span class="number">0</span>..<span class="number">100,000</span>];</li>
+            <li>each element of array A is an integer within the range [<span class="number">0</span>..<span class="number">M</span>].</li>
+        </ul>
+        </blockquote><p>Complexity:</p>
+        <blockquote><ul style="margin: 10px;padding: 0px;"><li>expected worst-case time complexity is O(N);</li>
+            <li>expected worst-case space complexity is O(M), beyond input storage (not counting the storage required for input arguments).</li>
+        </ul>
+        </blockquote><p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or disclosure prohibited.</small>
+    </div>
+</div>
+</body>
+</html>
