@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MinAbsSumOfTwo</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>Let A be a non-empty zero-indexed array consisting of N integers.</p>
+        <p>The <i>abs sum of two</i> for a pair of indices (P, Q) is the absolute value |A[P] + A[Q]|, for 0 ≤ P ≤ Q
+            &lt; N.</p>
+        <p>For example, the following array A:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 1
+            A[1] = 4
+            A[2] = -3</tt>
+        <p>has pairs of indices (0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2). <br>
+            The abs sum of two for the pair (0, 0) is A[0] + A[0] = |1 + 1| = 2. <br>
+            The abs sum of two for the pair (0, 1) is A[0] + A[1] = |1 + 4| = 5. <br>
+            The abs sum of two for the pair (0, 2) is A[0] + A[2] = |1 + (−3)| = 2. <br>
+            The abs sum of two for the pair (1, 1) is A[1] + A[1] = |4 + 4| = 8. <br>
+            The abs sum of two for the pair (1, 2) is A[1] + A[2] = |4 + (−3)| = 1. <br>
+            The abs sum of two for the pair (2, 2) is A[2] + A[2] = |(−3) + (−3)| = 6. <br>
+        </p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int[] A); }</tt></p></blockquote>
+        <p>that, given a non-empty zero-indexed array A consisting of N integers, returns the minimal abs sum of two for
+            any pair of indices in this array.</p>
+        <p>For example, given the following array A:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 1
+            A[1] = 4
+            A[2] = -3</tt>
+        <p>the function should return 1, as explained above.</p>
+        <p>Given array A:</p>
+        <tt style="white-space:pre-wrap"> A[0] = -8
+            A[1] = 4
+            A[2] = 5
+            A[3] =-10
+            A[4] = 3</tt>
+        <p>the function should return |(−8) + 5| = 3.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];
+                </li>
+                <li>each element of array A is an integer within the range [<span class="number">−1,000,000,000</span>..<span
+                        class="number">1,000,000,000</span>].
+                </li>
+            </ul>
+        </blockquote>
+        <p>Complexity:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>expected worst-case time complexity is O(N*log(N));</li>
+                <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage
+                    required for input arguments).
+                </li>
+            </ul>
+        </blockquote>
+        <p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+</body>
+</html>
