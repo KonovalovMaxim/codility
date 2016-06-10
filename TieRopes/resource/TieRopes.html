@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TieRopes</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>There are N ropes numbered from 0 to N − 1, whose lengths are given in a zero-indexed array A, lying on the
+            floor in a line. For each I (0 ≤ I &lt; N), the length of rope I on the line is A[I].</p>
+        <p>We say that two ropes I and I + 1 are <i>adjacent</i>. Two adjacent ropes can be tied together with a knot,
+            and the length of the tied rope is the sum of lengths of both ropes. The resulting new rope can then be tied
+            again.</p>
+        <p>For a given integer K, the goal is to tie the ropes in such a way that the number of ropes whose length is
+            greater than or equal to K is maximal.</p>
+        <p>For example, consider K = 4 and array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 1
+            A[1] = 2
+            A[2] = 3
+            A[3] = 4
+            A[4] = 1
+            A[5] = 1
+            A[6] = 3</tt>
+        <p>The ropes are shown in the figure below.</p>
+        <p>
+            <img src="https://codility-frontend-prod.s3.amazonaws.com/media/task_img/tie_ropes/media/auto/mpef34e7411d5fabc1d35c425a5c154b4d.png">
+        </p>
+        <p>We can tie:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>rope 1 with rope 2 to produce a rope of length A[1] + A[2] = 5;</li>
+                <li>rope 4 with rope 5 with rope 6 to produce a rope of length A[4] + A[5] + A[6] = 5.</li>
+            </ul>
+        </blockquote>
+        <p>After that, there will be three ropes whose lengths are greater than or equal to K = 4. It is not possible to
+            produce four such ropes.</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int K, int[] A); }</tt></p></blockquote>
+        <p>that, given an integer K and a non-empty zero-indexed array A of N integers, returns the maximum number of
+            ropes of length greater than or equal to K that can be created.</p>
+        <p>For example, given K = 4 and array A such that:</p>
+        <tt style="white-space:pre-wrap"> A[0] = 1
+            A[1] = 2
+            A[2] = 3
+            A[3] = 4
+            A[4] = 1
+            A[5] = 1
+            A[6] = 3</tt>
+        <p>the function should return 3, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N is an integer within the range [<span class="number">1</span>..<span class="number">100,000</span>];
+                </li>
+                <li>K is an integer within the range [<span class="number">1</span>..<span
+                        class="number">1,000,000,000</span>];
+                </li>
+                <li>each element of array A is an integer within the range [<span class="number">1</span>..<span
+                        class="number">1,000,000,000</span>].
+                </li>
+            </ul>
+        </blockquote>
+        <p>Complexity:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>expected worst-case time complexity is O(N);</li>
+                <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage
+                    required for input arguments).
+                </li>
+            </ul>
+        </blockquote>
+        <p>Elements of input arrays can be modified.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+</body>
+</html>
