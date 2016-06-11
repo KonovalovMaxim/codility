@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NumberSolitaire</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>A game for one player is played on a board consisting of N consecutive squares, numbered from 0 to N − 1. There
+        is a number written on each square. A non-empty zero-indexed array A of N integers contains the numbers written
+        on the squares. Moreover, some squares can be marked during the game.</p>
+    <p>At the beginning of the game, there is a pebble on square number 0 and this is the only square on the board which
+        is marked. The goal of the game is to move the pebble to square number N − 1.</p>
+    <p>During each turn we throw a six-sided die, with numbers from 1 to 6 on its faces, and consider the number K,
+        which shows on the upper face after the die comes to rest. Then we move the pebble standing on square number I
+        to square number I + K, providing that square number I + K exists. If square number I + K does not exist, we
+        throw the die again until we obtain a valid move. Finally, we mark square number I + K.</p>
+    <p>After the game finishes (when the pebble is standing on square number N − 1), we calculate the result. The result
+        of the game is the sum of the numbers written on all marked squares.</p>
+    <p>For example, given the following array:</p>
+    <tt style="white-space:pre-wrap"> A[0] = 1
+        A[1] = -2
+        A[2] = 0
+        A[3] = 9
+        A[4] = -1
+        A[5] = -2</tt>
+    <p>one possible game could be as follows:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>the pebble is on square number 0, which is marked;</li>
+            <li>we throw 3; the pebble moves from square number 0 to square number 3; we mark square number 3;</li>
+            <li>we throw 5; the pebble does not move, since there is no square number 8 on the board;</li>
+            <li>we throw 2; the pebble moves to square number 5; we mark this square and the game ends.</li>
+        </ul>
+    </blockquote>
+    <p>The marked squares are 0, 3 and 5, so the result of the game is 1 + 9 + (−2) = 8. This is the maximal possible
+        result that can be achieved on this board.</p>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int solution(int[] A); }</tt></p></blockquote>
+    <p>that, given a non-empty zero-indexed array A of N integers, returns the maximal result that can be achieved on
+        the board represented by array A.</p>
+    <p>For example, given the array</p>
+    <tt style="white-space:pre-wrap"> A[0] = 1
+        A[1] = -2
+        A[2] = 0
+        A[3] = 9
+        A[4] = -1
+        A[5] = -2</tt>
+    <p>the function should return 8, as explained above.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>N is an integer within the range [<span class="number">2</span>..<span class="number">100,000</span>];
+            </li>
+            <li>each element of array A is an integer within the range [<span class="number">−10,000</span>..<span
+                    class="number">10,000</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(N);</li>
+            <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required
+                for input arguments).
+            </li>
+        </ul>
+    </blockquote>
+    <p>Elements of input arrays can be modified.</p>
+</div>
+</body>
+</html>
