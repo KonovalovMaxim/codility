@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MinAbsSum</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>For a given array A of N integers and a sequence S of N integers from the set {−1, 1}, we define val(A, S) as
+        follows:</p>
+    <blockquote><p>val(A, S) = |<b>sum</b>{ A[i]*S[i] for i = 0..N−1 }|</p></blockquote>
+    <p>(Assume that the sum of zero elements equals zero.)</p>
+    <p>For a given array A, we are looking for such a sequence S that minimizes val(A,S).</p>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int solution(int[] A); }</tt></p></blockquote>
+    <p>that, given an array A of N integers, computes the minimum value of val(A,S) from all possible values of val(A,S)
+        for all possible sequences S of N integers from the set {−1, 1}.</p>
+    <p>For example, given array:</p>
+    <tt style="white-space:pre-wrap"> A[0] = 1
+        A[1] = 5
+        A[2] = 2
+        A[3] = -2</tt>
+    <p>your function should return 0, since for S = [−1, 1, −1, 1], val(A, S) = 0, which is the minimum possible
+        value.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>N is an integer within the range [<span class="number">0</span>..<span class="number">20,000</span>];
+            </li>
+            <li>each element of array A is an integer within the range [<span class="number">−100</span>..<span
+                    class="number">100</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(N*max(abs(A))<sup>2</sup>);</li>
+            <li>expected worst-case space complexity is O(N+sum(abs(A))), beyond input storage (not counting the storage
+                required for input arguments).
+            </li>
+        </ul>
+    </blockquote>
+    <p>Elements of input arrays can be modified.</p>
+</div>
+</body>
+</html>
