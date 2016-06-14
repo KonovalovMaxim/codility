@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DwarfRafting</title>
+</head>
+<body>
+<div id="task-0-text">
+    <div id="brinza-task-description">
+        <p>A company of dwarfs is travelling across the New Zealand. On reaching the Clutha River the dwarfs need to get
+            across, but recent storms have washed away the bridge. Luckily, a small ferry, in the form of a square raft,
+            is operating.</p>
+        <p>The raft is square and has N rows of seats, numbered from 1 to N. Each row contains N seats, labeled with
+            consecutive letters (<tt style="white-space:pre-wrap">A</tt>, <tt style="white-space:pre-wrap">B</tt>, <tt
+                    style="white-space:pre-wrap">C</tt>, etc.). Each seat is identified by a string composed of its row
+            number followed by its column number; for example, "<tt style="white-space:pre-wrap">9C</tt>" denotes the
+            third seat in the 9th row.</p>
+        <p>The raft has already been loaded with barrels in some seat positions, and other seats are already occupied by
+            dwarfs. Our company of dwarfs may only take the remaining unoccupied seats. The ferryman wants to
+            accommodate as many dwarfs as possible, but the raft needs to be stable when making the crossing. That is,
+            the following conditions must be satisfied:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>the front and back halves of the raft (in terms of the rows of seats) must each contain the same
+                    number of dwarfs;
+                </li>
+                <li>similarly, the left and right sides of the raft (in terms of the columns of seats) must each contain
+                    the same number of dwarfs.
+                </li>
+            </ul>
+        </blockquote>
+        <p>You do not have to worry about balancing the barrels; you can assume that their weights are negligible.</p>
+        <p>For example, a raft of size N = 4 is shown in the following illustration:</p>
+        <p>
+            <img src="https://codility-frontend-prod.s3.amazonaws.com/media/task_img/dwarfs_rafting/media/auto/tikz9d84282f2be99cd90300df403a80b3fe.png">
+        </p>
+        <p>Barrels are marked as brown squares, and seats that are already occupied by dwarfs are labeled <tt
+                style="white-space:pre-wrap">d</tt>.</p>
+        <p>The positions of the barrels are given in string S. The occupied seat numbers are given in string T. The
+            contents of the strings are separated by single spaces and may appear in any order. For example, in the
+            diagram above, S = "<tt style="white-space:pre-wrap">1B 1C 4B 1D 2A</tt>" and T = "<tt
+                    style="white-space:pre-wrap">3B 2D</tt>".</p>
+        <p>In this example, the ferryman can accommodate at most six more dwarfs, as indicated by the green squares in
+            the following diagram:</p>
+        <p>
+            <img src="https://codility-frontend-prod.s3.amazonaws.com/media/task_img/dwarfs_rafting/media/auto/tikz1b19d027e63b9b8d522d505bfb1830dc.png">
+        </p>
+        <p>The raft is then balanced: both left and right halves have the same number of dwarfs (four), and both front
+            and back halves have the same number of dwarfs (also four).</p>
+        <p>Write a function:</p>
+        <blockquote><p class="lang-java"
+                       style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+            Solution { public int solution(int N, String S, String T); }</tt></p></blockquote>
+        <p>that, given the size of the raft N and two strings S, T that describes the positions of barrels and occupied
+            seats, respectively, returns the maximum number of dwarfs that can fit on the raft. If it is not possible to
+            balance the raft with dwarfs, your function should return <tt style="white-space:pre-wrap">-1</tt>.</p>
+        <p>For instance, given N = 4, S = "<tt style="white-space:pre-wrap">1B 1C 4B 1D 2A</tt>" and T = "<tt
+                style="white-space:pre-wrap">3B 2D</tt>", your function should return 6, as explained above.</p>
+        <p>Assume that:</p>
+        <blockquote>
+            <ul style="margin: 10px;padding: 0px;">
+                <li>N is an even integer within the range [2..26];</li>
+                <li>strings S, T consist of valid seat numbers, separated with spaces;</li>
+                <li>each seat number can appear no more than once in the strings;</li>
+                <li>no seat number can appear in both S and T simultaneously.</li>
+            </ul>
+        </blockquote>
+        <p>In your solution, focus on <b><b>correctness</b></b>. The performance of your solution will not be the focus
+            of the assessment.</p>
+    </div>
+    <div style="margin-top:5px">
+        <small>Copyright 2009–2016 by Codility Limited. All Rights Reserved. Unauthorized copying, publication or
+            disclosure prohibited.
+        </small>
+    </div>
+</div>
+</body>
+</html>
