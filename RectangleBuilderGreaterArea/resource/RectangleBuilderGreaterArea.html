@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RectangleBuilderGreaterArea</title>
+</head>
+<body>
+<div id="brinza-task-description">
+    <p>Halfling Woolly Proudhoof is an eminent sheep herder. He wants to build a pen (enclosure) for his new flock of
+        sheep. The pen will be rectangular and built from exactly four pieces of fence (so, the pieces of fence forming
+        the opposite sides of the pen must be of equal length). Woolly can choose these pieces out of N pieces of fence
+        that are stored in his barn. To hold the entire flock, the area of the pen must be greater than or equal to a
+        given threshold X.</p>
+    <p>Woolly is interested in the number of different ways in which he can build a pen. Pens are considered different
+        if the sets of lengths of their sides are different. For example, a pen of size 1×4 is different from a pen of
+        size 2×2 (although both have an area of 4), but pens of sizes 1×2 and 2×1 are considered the same.</p>
+    <p>Write a function:</p>
+    <blockquote><p class="lang-java"
+                   style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class
+        Solution { public int solution(int[] A, int X); }</tt></p></blockquote>
+    <p>that, given a zero-indexed array A of N integers (containing the lengths of the available pieces of fence) and an
+        integer X, returns the number of different ways of building a rectangular pen satisfying the above conditions.
+        The function should return −1 if the result exceeds 1,000,000,000.</p>
+    <p>For example, given X = 5 and the following array A:</p>
+    <tt style="white-space:pre-wrap"> A[0] = 1
+        A[1] = 2
+        A[2] = 5
+        A[3] = 1
+        A[4] = 1
+        A[5] = 2
+        A[6] = 3
+        A[7] = 5
+        A[8] = 1</tt>
+    <p>
+        <img src="https://codility-frontend-prod.s3.amazonaws.com/media/task_img/rectangle_builder_greater_area/media/auto/tikz1a4d747a23af42472172dcdc2b00d74a.png">
+    </p>
+    <p>the function should return 2. The figure above shows available pieces of fence (on the left) and possible to
+        build pens (on the right). The pens are of sizes 1x5 and 2x5. Pens of sizes 1×1 and 1×2 can be built, but are
+        too small in area. It is not possible to build pens of sizes 2×3 or 3×5, as there is only one piece of fence of
+        length 3.</p>
+    <p>Assume that:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>N is an integer within the range [<span class="number">0</span>..<span class="number">100,000</span>];
+            </li>
+            <li>X is an integer within the range [<span class="number">1</span>..<span
+                    class="number">1,000,000,000</span>];
+            </li>
+            <li>each element of array A is an integer within the range [<span class="number">1</span>..<span
+                    class="number">1,000,000,000</span>].
+            </li>
+        </ul>
+    </blockquote>
+    <p>Complexity:</p>
+    <blockquote>
+        <ul style="margin: 10px;padding: 0px;">
+            <li>expected worst-case time complexity is O(N*log(N));</li>
+            <li>expected worst-case space complexity is O(N), beyond input storage (not counting the storage required
+                for input arguments).
+            </li>
+        </ul>
+    </blockquote>
+    <p>Elements of input arrays can be modified.</p>
+</div>
+</body>
+</html>
